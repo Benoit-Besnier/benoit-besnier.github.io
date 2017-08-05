@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App" ng-cloak="">
 	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
+		<title>Benoit Besnier : Developpeur Junior</title>
 	</head>
-	<body>
+	<body ng-controller="View">
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -12,17 +12,30 @@
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
+
 		<div class="container">
     		<div class="blurb">
-        		<h1>Hi there, I'm Benoit Besnier!</h1>
+        		<h1>Hi there, I'm {{profile.firstname}} {{profile.surname}} !</h1>
 				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+
 		<footer>
     		<ul>
         		<li><a href="mailto:benoit.besnier@outlook.com">email</a></li>
         		<li><a href="https://github.com/Benoit-Besnier">github.com/Benoit-Besnier</a></li>
 			</ul>
 		</footer>
+
+        <script src="librairies/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js" ></script>
+
+        <script src="javascripts/core.js"></script>
+        <script src="javascripts/factory.js"></script>
+        <script src="javascripts/directive.js"></script>
+        <script src="javascripts/controller.js"></script>
 	</body>
 </html>
